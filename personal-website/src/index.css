@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: 'Fraunces', Georgia, serif;
-  font-optical-sizing: auto;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 17px; /* Playfair's small x-height reads better a little larger than the 16px default */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
