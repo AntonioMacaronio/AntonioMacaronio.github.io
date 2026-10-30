@@ -33,11 +33,22 @@
     flex-shrink: 0;
   }
   
+  /* Headings in Fraunces at its display optical size, as on matthewh6.github.io/tmrl */
+  .about-me h1,
+  .about-me h2 {
+    font-variation-settings: 'opsz' 144;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    word-spacing: 0.12em;
+  }
+
   .about-me h1 {
     color: #333;
+    font-size: 2.6em;
+    line-height: 1.05;
     margin-bottom: 20px;
   }
-  
+
   .about-me h2 {
     color: #333;
     margin-top: 30px;
@@ -77,7 +88,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 6px 28px;
+    gap: 6px 10px;
   }
 
   .about-me .quick-links a {
@@ -95,12 +106,17 @@
   .contact-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px 24px;
+    gap: 6px 9px;
     margin-top: 4px;
   }
 
   .about-me .contact-links a:hover {
     text-decoration: underline;
+  }
+
+  /* Slashes between the quick links and between the contact links */
+  .link-slash {
+    color: #b5b5b5;
   }
 
   /* Email written out under the profile picture */

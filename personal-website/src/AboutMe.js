@@ -18,12 +18,18 @@ const NEWS = [
   },
 ];
 
+// A light slash between inline links (outside the links, so it isn't clickable)
+const Sep = () => <span className="link-slash" aria-hidden="true">/</span>;
+
 // Quick links above the name, scrolling with the page (no separate nav bar)
 const QuickLinks = () => (
   <nav className="quick-links">
     <a href="#news">News</a>
+    <Sep />
     <a href="#research">Research</a>
+    <Sep />
     <a href="#projects">Projects</a>
+    <Sep />
     <Link to="/minigame" title="Play the minigame">Minigame</Link>
   </nav>
 );
@@ -51,8 +57,12 @@ const AboutMe = () => {
             </p>
             <div className="contact-links">
               <a href={CV_URL} target="_blank" rel="noopener noreferrer">CV</a>
+              <Sep />
               <a href="https://scholar.google.com/citations?user=kEw2NUsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+              <Sep />
               <a href="https://www.linkedin.com/in/antzhang" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <Sep />
+              <a href="https://github.com/AntonioMacaronio" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
           <div className="about-me-sidebar">
