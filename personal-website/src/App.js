@@ -1,6 +1,6 @@
 import React from 'react';
 import PointCloudAnimation from './PointCloudAnimation';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom';
 import './App.css';
 import AboutMe from './AboutMe';
 
@@ -22,8 +22,10 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Minigame />} />
-          <Route path="/home" element={<AboutMe />} />
+          <Route path="/" element={<AboutMe />} />
+          <Route path="/minigame" element={<Minigame />} />
+          {/* Old links (e.g. /home) and unknown paths go to the home page */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
     </Router>

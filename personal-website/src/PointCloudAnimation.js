@@ -224,7 +224,7 @@ const PointCloudAnimation = () => {
         sphere.material.color.setHex(Math.random() * 0xffffff);
         if (hitCount.current === 5) {
           console.log("Redirecting");
-          navigate('/home');
+          navigate('/');
         }
       }
     }

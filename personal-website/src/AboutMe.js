@@ -25,7 +25,7 @@ const AboutMe = () => {
         </div>
         <div className="about-me-sidebar">
           <ProfilePic />
-          <Link className="back-link" to="/">Back to Minigame</Link>
+          <Link className="back-link" to="/minigame">Play the Minigame</Link>
         </div>
       </div>
       
