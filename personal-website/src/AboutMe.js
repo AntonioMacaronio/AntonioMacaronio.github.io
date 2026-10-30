@@ -32,7 +32,37 @@ const AboutMe = () => {
       <div className="research-container">
         <h2>Research <span style={{fontSize: '0.6em', opacity: 0.7}}>⚙️ under construction ⚙️</span></h2>
         <div className="research-section">
-          
+
+          {/* M.S. thesis */}
+          <div className="publication-block">
+            <div className="publication-thumbnail">
+              <video
+                src={process.env.PUBLIC_URL + '/EgoVideoMotion.mp4'}
+                alt="Generated motion climbing a reconstructed staircase beside its egocentric video"
+                autoPlay
+                loop
+                muted
+                playsInline
+              />
+            </div>
+            <div className="publication-content">
+              <h3 className="publication-title">
+                Aligning Egocentric Video and Human Motion Generation
+              </h3>
+              <div className="publication-authors">
+              <b>Anthony Zhang</b>
+              </div>
+              <div className="publication-links">
+                <a href="https://antoniomacaronio.github.io/aligning-video-motion/" target="_blank" rel="noopener noreferrer">Website</a>
+                <span className="link-separator">|</span>
+                <span className="publication-pending">M.S. Thesis, UC Berkeley 2026 (paper coming soon)</span>
+              </div>
+              <p className="publication-description">
+                A single video diffusion model that generates egocentric video and full-body human motion together, or either one from the other, aligned with a text curriculum and geometric post-training against a 3D reconstruction model.
+              </p>
+            </div>
+          </div>
+
           {/* Viser paper */}
           <div className="publication-block">
             <div className="publication-thumbnail">
@@ -139,6 +169,31 @@ const AboutMe = () => {
                 A joint optimization framework to estimate 3D human poses and their shape, scene pointmaps, and camera poses from multiview image captures.
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="research-container">
+        <h2>Other Projects</h2>
+        <div className="research-section">
+          <div className="project-block">
+            <h3 className="publication-title">
+              <a href="https://sarevalo2002.github.io/proj-webpage-template/finalprojfinal/index.html" target="_blank" rel="noopener noreferrer">3D Liquid Simulation</a>
+            </h3>
+            <div className="publication-authors">
+              Aaron Shalf, <b>Anthony Zhang</b>, Eric Kusnanto, Sebastian Arevalo · CS 184 final project, Spring 2023
+            </div>
+            <p className="publication-description">
+              A particle-based 3D fluid simulator built on Position Based Fluids, with vorticity, viscosity, collision response and height-based shading.
+            </p>
+          </div>
+          <div className="project-block">
+            <h3 className="publication-title">
+              <a href="https://antoniomacaronio.github.io/cs180-webpages/random/index.html" target="_blank" rel="noopener noreferrer">Nerfacto and Splatfacto on Large Captures</a>
+            </h3>
+            <p className="publication-description">
+              Slider comparisons of nerfstudio's Nerfacto and Splatfacto reconstructions of the UC Berkeley Campanile from 200 and 2,000 images.
+            </p>
           </div>
         </div>
       </div>
