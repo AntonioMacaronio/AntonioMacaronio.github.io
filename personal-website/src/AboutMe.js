@@ -13,25 +13,21 @@ const NEWS = [
     text: (
       <>
         Received the{' '}
-        <a href="https://www.nsfgrfp.org/" target="_blank" rel="noopener noreferrer">NSF Graduate Research Fellowship (GRFP)</a>.
+        NSF Graduate Research Fellowship (<a href="https://www.nsfgrfp.org/" target="_blank" rel="noopener noreferrer">GRFP</a>).
       </>
     ),
   },
 ];
 
-const SiteNav = () => (
-  <nav className="site-nav">
-    <div className="site-nav-inner">
-      <a className="site-nav-brand" href="#top">Anthony Zhang</a>
-      <div className="site-nav-links">
-        <a href="#news">News</a>
-        <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
-        <Link to="/minigame" className="site-nav-game" title="Play the minigame">
-          <Gamepad2 size={18} /> <span>Minigame</span>
-        </Link>
-      </div>
-    </div>
+// Quick links above the name, scrolling with the page (no separate nav bar)
+const QuickLinks = () => (
+  <nav className="quick-links">
+    <a href="#news">News</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <Link to="/minigame" className="quick-link-game" title="Play the minigame">
+      <Gamepad2 size={17} /> Minigame
+    </Link>
   </nav>
 );
 
@@ -45,13 +41,13 @@ const AboutMe = () => {
 
   return (
     <>
-      <SiteNav />
       <div className={`about-me ${isVisible ? 'visible' : ''}`}>
+        <QuickLinks />
         <section id="top" className="about-me-content">
           <div className="about-me-text">
             <h1>Anthony Zhang</h1>
             <p>
-              I'm a PhD student at UT Austin and a recipient of the <a href="https://www.nsfgrfp.org/" target="_blank" rel="noopener noreferrer">NSF Graduate Research Fellowship (GRFP)</a>. I obtained my Bachelor's and Master's from UC Berkeley, advised by <a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa</a>. My interests include computer graphics, 3D computer vision, scene reconstruction, human motion/humanoid robotics, and machine learning.
+              I'm a PhD student at UT Austin and a recipient of the NSF Graduate Research Fellowship (<a href="https://www.nsfgrfp.org/" target="_blank" rel="noopener noreferrer">GRFP</a>). I obtained my Bachelor's and Master's from UC Berkeley, advised by <a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa</a>. My interests include computer graphics, 3D computer vision, scene reconstruction, human motion/humanoid robotics, and machine learning.
             </p>
             <p>
               Currently, I'm an Applied Scientist intern at Amazon's Frontier Intelligence and Robotics Lab working on humanoid robotics.
