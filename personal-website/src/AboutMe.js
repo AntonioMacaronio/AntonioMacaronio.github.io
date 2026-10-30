@@ -27,7 +27,6 @@ const SiteNav = () => (
         <a href="#news">News</a>
         <a href="#research">Research</a>
         <a href="#projects">Projects</a>
-        <a href={CV_URL} target="_blank" rel="noopener noreferrer">CV</a>
         <Link to="/minigame" className="site-nav-game" title="Play the minigame">
           <Gamepad2 size={18} /> <span>Minigame</span>
         </Link>
@@ -57,6 +56,9 @@ const AboutMe = () => {
             <p>
               Currently, I'm an Applied Scientist intern at Amazon's Frontier Intelligence and Robotics Lab working on humanoid robotics.
             </p>
+          </div>
+          <div className="about-me-sidebar">
+            <ProfilePic />
             <div className="contact-links">
               <a href="mailto:antzhan1234@gmail.com"><Mail size={17} /> Email</a>
               <a href={CV_URL} target="_blank" rel="noopener noreferrer"><FileText size={17} /> CV</a>
@@ -65,9 +67,6 @@ const AboutMe = () => {
               <a href="https://www.linkedin.com/in/antzhang" target="_blank" rel="noopener noreferrer"><Linkedin size={17} /> LinkedIn</a>
             </div>
           </div>
-          <div className="about-me-sidebar">
-            <ProfilePic />
-          </div>
         </section>
 
         <section id="news" className="research-container">
@@ -75,8 +74,7 @@ const AboutMe = () => {
           <ul className="news-list">
             {NEWS.map((item) => (
               <li key={item.date}>
-                <span className="news-date">{item.date}</span>
-                <span className="news-text">{item.text}</span>
+                <span className="news-date">{item.date}</span> &mdash; {item.text}
               </li>
             ))}
           </ul>

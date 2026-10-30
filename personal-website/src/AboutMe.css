@@ -123,12 +123,14 @@
     gap: 5px;
   }
 
-  /* Text links under the bio */
+  /* Text links under the profile picture: two centered rows (Email, CV, Scholar / GitHub, LinkedIn) */
   .contact-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px 20px;
-    margin-top: 4px;
+    justify-content: center;
+    gap: 6px 14px;
+    width: 280px;
+    font-size: 0.95em;
   }
 
   .about-me .contact-links a {
@@ -144,16 +146,13 @@
 
   /* News */
   .news-list {
-    list-style: none;
+    list-style: disc;
     margin: 0 0 10px 0;
-    padding: 0;
+    padding-left: 22px;
   }
 
   .news-list li {
-    display: grid;
-    grid-template-columns: 120px 1fr;
-    gap: 12px;
-    padding: 6px 0;
+    padding: 1px 0;
     color: #555;
     line-height: 1.5;
   }
@@ -461,14 +460,6 @@
     display: none;
   }
 
-  .contact-links {
-    justify-content: center;
-  }
-
-  .news-list li {
-    grid-template-columns: 100px 1fr;
-  }
-
   .projects-grid {
     grid-template-columns: 1fr;
   }
@@ -533,10 +524,5 @@
 
   .site-nav-brand {
     display: none;
-  }
-
-  .news-list li {
-    grid-template-columns: 1fr;
-    gap: 2px;
   }
 }
