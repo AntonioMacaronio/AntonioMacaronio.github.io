@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FileText, Gamepad2, GraduationCap, Linkedin, Mail } from 'lucide-react';
 import ProfilePic from './ProfilePic';
 import './AboutMe.css';
 
@@ -25,9 +24,7 @@ const QuickLinks = () => (
     <a href="#news">News</a>
     <a href="#research">Research</a>
     <a href="#projects">Projects</a>
-    <Link to="/minigame" className="quick-link-game" title="Play the minigame">
-      <Gamepad2 size={17} /> Minigame
-    </Link>
+    <Link to="/minigame" title="Play the minigame">Minigame</Link>
   </nav>
 );
 
@@ -52,15 +49,16 @@ const AboutMe = () => {
             <p>
               Currently, I'm an Applied Scientist intern at Amazon FAR (Frontier AI and Robotics) working on humanoid robotics.
             </p>
+            <div className="contact-links">
+              <a href={CV_URL} target="_blank" rel="noopener noreferrer">CV</a>
+              <a href="https://scholar.google.com/citations?user=kEw2NUsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+              <a href="https://www.linkedin.com/in/antzhang" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
           </div>
           <div className="about-me-sidebar">
             <ProfilePic />
-            <div className="contact-links">
-              <a href="mailto:antzhan1234@gmail.com"><Mail size={17} /> Email</a>
-              <a href={CV_URL} target="_blank" rel="noopener noreferrer"><FileText size={17} /> CV</a>
-              <a href="https://scholar.google.com/citations?user=kEw2NUsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><GraduationCap size={17} /> Google Scholar</a>
-              <a href="https://www.linkedin.com/in/antzhang" target="_blank" rel="noopener noreferrer"><Linkedin size={17} /> LinkedIn</a>
-            </div>
+            {/* written out, not a mailto link, so scrapers don't pick it up */}
+            <p className="email-text">antzhan1234 [at] gmail [dot] com</p>
           </div>
         </section>
 

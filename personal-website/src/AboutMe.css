@@ -91,30 +91,24 @@
     text-decoration: underline;
   }
 
-  .quick-link-game {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-  }
-
-  /* Text links under the profile picture: a 2x2 grid (Email, CV / Google Scholar, LinkedIn), centered */
+  /* Plain text links under the bio */
   .contact-links {
-    display: grid;
-    grid-template-columns: repeat(2, max-content);
-    justify-content: center;
-    gap: 6px 28px;
-    font-size: 0.95em;
-  }
-
-  .about-me .contact-links a {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    color: #444;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 24px;
+    margin-top: 4px;
   }
 
   .about-me .contact-links a:hover {
-    color: #007bff;
+    text-decoration: underline;
+  }
+
+  /* Email written out under the profile picture */
+  .about-me .email-text {
+    margin: 0 10px;
+    color: #444;
+    font-size: 0.95em;
+    text-align: center;
   }
 
   /* News */
@@ -153,7 +147,7 @@
   
   .research-container {
     max-width: 1000px;
-    margin: 20px auto 0 auto;
+    margin: 0 auto;
     padding: 0 20px;
   }
   
@@ -387,6 +381,10 @@
   .research-container h2 {
     font-size: 1.6em;
     text-align: center;
+  }
+
+  .contact-links {
+    justify-content: center;
   }
 
   .publication-block {
