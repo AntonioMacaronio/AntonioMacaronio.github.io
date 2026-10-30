@@ -47,10 +47,10 @@ const AboutMe = () => {
           <div className="about-me-text">
             <h1>Anthony Zhang</h1>
             <p>
-              I'm a PhD student at UT Austin and a recipient of the NSF Graduate Research Fellowship (<a href="https://www.nsfgrfp.org/" target="_blank" rel="noopener noreferrer">GRFP</a>). I obtained my Bachelor's and Master's from UC Berkeley, advised by <a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa</a>. My interests include computer graphics, 3D computer vision, scene reconstruction, human motion/humanoid robotics, and machine learning.
+              I'm a PhD student at UT Austin and a recipient of the NSF Graduate Research Fellowship (<a href="https://www.nsfgrfp.org/" target="_blank" rel="noopener noreferrer">GRFP</a>). I obtained my Bachelor's and Master's from UC Berkeley, advised by <a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa</a>. My interests include 3D computer vision, Real2Sim2Real, humanoid robotics, dexterous manipulation, and video models. I'm also an avid fan of building large-scale infrastructure and robot infra!
             </p>
             <p>
-              Currently, I'm an Applied Scientist intern at Amazon's Frontier Intelligence and Robotics Lab working on humanoid robotics.
+              Currently, I'm an Applied Scientist intern at Amazon FAR (Frontier AI and Robotics) working on humanoid robotics.
             </p>
           </div>
           <div className="about-me-sidebar">
