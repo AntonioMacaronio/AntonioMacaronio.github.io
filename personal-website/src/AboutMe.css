@@ -72,11 +72,7 @@
     color: #0056b3;
   }
   
-  /* Quick links above the name, linking to each section */
-  html {
-    scroll-behavior: smooth;
-  }
-
+  /* Quick links above the name, linking to each section (they scroll smoothly from AboutMe.js) */
   .about-me section[id] {
     scroll-margin-top: 16px;
   }

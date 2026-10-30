@@ -21,14 +21,23 @@ const NEWS = [
 // A light slash between inline links (outside the links, so it isn't clickable)
 const Sep = () => <span className="link-slash" aria-hidden="true">/</span>;
 
+// Scroll to a section without putting its #id in the address, so a refresh starts at the top
+const scrollToSection = (event) => {
+  const target = document.getElementById(event.currentTarget.hash.slice(1));
+  if (target) {
+    event.preventDefault();
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 // Quick links above the name, scrolling with the page (no separate nav bar)
 const QuickLinks = () => (
   <nav className="quick-links">
-    <a href="#news">News</a>
+    <a href="#news" onClick={scrollToSection}>News</a>
     <Sep />
-    <a href="#research">Research</a>
+    <a href="#research" onClick={scrollToSection}>Research</a>
     <Sep />
-    <a href="#projects">Projects</a>
+    <a href="#projects" onClick={scrollToSection}>Projects</a>
     <Sep />
     <Link to="/minigame" title="Play the minigame">Minigame</Link>
   </nav>
@@ -40,6 +49,20 @@ const AboutMe = () => {
   useEffect(() => {
     const timer = setTimeout(() => setIsVisible(true), 50);
     return () => clearTimeout(timer);
+  }, []);
+
+  // Open at the top on every load instead of the browser's restored scroll position; a shared link with a
+  // section (e.g. /#research) still opens at that section.
+  useEffect(() => {
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    const target = window.location.hash && document.getElementById(window.location.hash.slice(1));
+    if (target) {
+      target.scrollIntoView();
+    } else {
+      window.scrollTo(0, 0);
+    }
   }, []);
 
   return (
