@@ -21,7 +21,24 @@
     -ms-user-select: none;
     user-select: none;
   }
-  
+
+  .home-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 11;
+    padding: 8px 14px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .home-link:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+
   .point-cloud-container {
     position: absolute;
     top: 0;

@@ -1,12 +1,13 @@
 import React from 'react';
 import PointCloudAnimation from './PointCloudAnimation';
-import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Navigate, Route, Routes } from 'react-router-dom';
 import './App.css';
 import AboutMe from './AboutMe';
 
 function Minigame() {
   return (
     <div className="Minigame">
+      <Link className="home-link" to="/">← Home</Link>
       <div className="objective-text">
         <h1>Shoot the center sphere 5 times!</h1>
       </div>
