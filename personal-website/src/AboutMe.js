@@ -84,6 +84,7 @@ const AboutMe = () => {
               <div className="publication-thumbnail">
                 <video
                   src={process.env.PUBLIC_URL + '/EgoVideoMotion.mp4'}
+                  style={{ aspectRatio: '600 / 320' }}
                   alt="Generated motion climbing a reconstructed staircase beside its egocentric video"
                   autoPlay
                   loop
@@ -114,6 +115,7 @@ const AboutMe = () => {
               <div className="publication-thumbnail">
                 <video
                   src={process.env.PUBLIC_URL + '/viser_demos.mp4'}
+                  style={{ aspectRatio: '1526 / 1080' }}
                   alt="Viser demo video"
                   autoPlay
                   loop
@@ -145,6 +147,7 @@ const AboutMe = () => {
               <div className="publication-thumbnail">
                 <video
                   src={process.env.PUBLIC_URL + '/VideoMimic.mp4'}
+                  style={{ aspectRatio: '1920 / 1080' }}
                   alt="VideoMimic demo video"
                   autoPlay
                   loop

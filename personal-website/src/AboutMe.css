@@ -172,36 +172,31 @@
     display: flex;
     gap: 20px;
     margin-bottom: 5px;
-    padding: 15px 15px 0px 15px;
+    padding: 15px;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     background-color: #fafafa;
     transition: box-shadow 0.3s ease;
   }
-  
+
   .publication-block:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
-  
+
+  /* Every thumbnail is 280 px wide at its own aspect ratio (no letterboxing), centered beside the text */
   .publication-thumbnail {
     flex-shrink: 0;
+    align-self: center;
     width: 280px;
-    height: 150px;
     overflow: hidden;
     border-radius: 6px;
-    background-color: #f0f0f0;
-  }
-  
-  .publication-thumbnail img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
   }
 
+  .publication-thumbnail img,
   .publication-thumbnail video {
+    display: block;
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    height: auto;
   }
   
   .publication-content {
@@ -397,13 +392,12 @@
   .publication-block {
     flex-direction: column;
     gap: 15px;
-    padding: 15px 10px 0px 10px;
+    padding: 15px 10px;
   }
 
   .publication-thumbnail {
     width: 100%;
     max-width: 280px;
-    height: 120px;
     align-self: center;
   }
 
@@ -452,12 +446,8 @@
   }
 
   .publication-block {
-    padding: 12px 8px 0px 8px;
+    padding: 12px 8px;
     gap: 12px;
-  }
-
-  .publication-thumbnail {
-    height: 100px;
   }
 
   .publication-title {
