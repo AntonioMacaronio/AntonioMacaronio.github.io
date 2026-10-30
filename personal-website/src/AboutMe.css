@@ -139,7 +139,6 @@
   .profile-pic {
     width: 250px;
     height: 250px;
-    border-radius: 20px;
     object-fit: cover;
     margin-bottom: 10px;
     margin-top: 10px;
