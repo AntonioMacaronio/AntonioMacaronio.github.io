@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FileText, Gamepad2, Github, GraduationCap, Linkedin, Mail } from 'lucide-react';
+import { FileText, Gamepad2, GraduationCap, Linkedin, Mail } from 'lucide-react';
 import ProfilePic from './ProfilePic';
 import './AboutMe.css';
 
@@ -59,7 +59,6 @@ const AboutMe = () => {
               <a href="mailto:antzhan1234@gmail.com"><Mail size={17} /> Email</a>
               <a href={CV_URL} target="_blank" rel="noopener noreferrer"><FileText size={17} /> CV</a>
               <a href="https://scholar.google.com/citations?user=kEw2NUsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><GraduationCap size={17} /> Google Scholar</a>
-              <a href="https://github.com/AntonioMacaronio" target="_blank" rel="noopener noreferrer"><Github size={17} /> GitHub</a>
               <a href="https://www.linkedin.com/in/antzhang" target="_blank" rel="noopener noreferrer"><Linkedin size={17} /> LinkedIn</a>
             </div>
           </div>

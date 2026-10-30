@@ -97,13 +97,12 @@
     gap: 5px;
   }
 
-  /* Text links under the profile picture: two centered rows (Email, CV, Scholar / GitHub, LinkedIn) */
+  /* Text links under the profile picture: a 2x2 grid (Email, CV / Google Scholar, LinkedIn), centered */
   .contact-links {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
     justify-content: center;
-    gap: 6px 14px;
-    width: 280px;
+    gap: 6px 28px;
     font-size: 0.95em;
   }
 
