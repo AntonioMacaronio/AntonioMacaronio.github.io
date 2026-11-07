@@ -33,11 +33,11 @@
     flex-shrink: 0;
   }
   
-  /* Headings in bold Playfair Display, slightly tightened as on videomimic.net */
+  /* Bold headings, slightly tightened */
   .about-me h1,
   .about-me h2 {
     font-weight: 700;
-    letter-spacing: -0.015em;
+    letter-spacing: -0.01em;
   }
 
   .about-me h1 {

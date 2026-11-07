@@ -1,7 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 17px; /* Playfair's small x-height reads better a little larger than the 16px default */
+  font-family: 'Avenir Next', 'Avenir', 'Nunito Sans', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
