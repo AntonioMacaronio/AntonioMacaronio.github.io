@@ -110,7 +110,7 @@ const AboutMe = () => {
           <h2>Research</h2>
           <div className="research-section">
 
-            {/* M.S. thesis */}
+            {/* Aligning Egocentric Video and Human Motion Generation (arXiv, forthcoming) */}
             <div className="publication-block">
               <div className="publication-thumbnail">
                 <video
@@ -133,7 +133,7 @@ const AboutMe = () => {
                 <div className="publication-links">
                   <a href="https://antoniomacaronio.github.io/aligning-video-motion/" target="_blank" rel="noopener noreferrer">Website</a>
                   <span className="link-separator">|</span>
-                  <span className="publication-pending">M.S. Thesis, UC Berkeley 2026 (paper coming soon)</span>
+                  <span className="publication-pending">Paper - arXiv preprint (coming soon)</span>
                 </div>
                 <p className="publication-description">
                   A single video diffusion model that generates egocentric video and full-body human motion together, or either one from the other, aligned with a text curriculum and geometric post-training against a 3D reconstruction model.
